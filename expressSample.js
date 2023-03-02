@@ -10,7 +10,7 @@ app.use((req,res,next)=>{
 
 app.get('/signup',function(req,res,next){
     res.sendFile(path.join(__dirname,'signup.html'))
-    console.log('middle');
+    console.log('middle');    
     
     next()
 })
@@ -21,7 +21,7 @@ app.use((req,res,)=>{
 
 })
 
-app.post('/signup',(req,res)=>res.send('signup page test'))
+app.post('/signup',(req,res)=>res.send('signup page'))
 
 app.get('/about',(req,res)=> res.send('about'))
 
